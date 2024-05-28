@@ -1,1 +1,9 @@
+Autonomous Reliable Experiment: Active Oversight and Quality Control 
+Paper: https://arxiv.org/abs/2405.16230
 
+This repository contains the approach to enhancing Gaussian Process Bayesian Optimization (GPBO) driven autonomous experiments by incorporating a secondary GP to dynamically constrain the experimental space based on real-time assessments of experimental results.
+
+In GPBO-driven autonomous experiments, scalar measurements of target properties can be directly used for GP training. However, non-scalar experimental results (e.g., spectroscopy or image data) often require transformation into scalar descriptors using predefined scalarizer functions. The predefined scalarizer functions may fail to handle the complexity and diversity of real-world data, potentially skewing outcomes and diminishing the optimization process.
+
+To overcome this, we developed an approach that includes a secondary surrogate model to dynamically constrain the experimental space; which isolates promising experimental spaces and ensuring higher-quality data for primary GPBO. 
+A human-in-the-loop intervention is also included for adapting to unanticipated results, combining human expertise with machine learning efficiency.
